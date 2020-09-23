@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax in HTML, CSS and JavaScript Tutorial - Let's make it happen!</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <a href="#" class="logo">NatureComp</a>
+            <nav>
+                <img src="images/menu.png" alt="menu" class="menu">
+            </nav>
+        </header>
+
+        <h1 class="lax" data-lax-translate-y="0 0, 400 -400">Preserve Nature</h1>
+        <div class="line lax" data-lax-opacity="0 1, 100 0"></div>
+    </div>
+
+    <div class="container secondary lax" data-lax-translate-y="0 0, 400 -600" data-lax-opacity="0 0, 300 1">
+        <h2>Strategic</h2>
+        <p class="subtext">Alliances</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, harum?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, harum?</p>
+    </div>
+
+    <img src="images/mountains.png" alt="mountains" class="mountains lax" data-lax-translate-y="0 1, 400 -100">
+    <img src="images/forest.png" alt="forest" class="trees lax" data-lax-translate-y="0 1, 400 -260">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
